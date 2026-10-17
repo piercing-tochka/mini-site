@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru" data-theme="light">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f3ece2">
+    <meta name="description" content="Юлия — мастер пирсинга в Перми. Куйбышева, 93.">
+    <title>Юлия — мастер пирсинга · Пирсинг Точка</title>
+    <link rel="icon" href="assets/logo-light.webp" type="image/webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://dikidi.ru/assets/js/widget_record/widget2.min.js?v=1825777749" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="page-wrap">
+      <article class="profile" aria-label="Страница мастера Юлии">
+        <header class="topbar">
+          <a class="brand" href="./" aria-label="Пирсинг Точка — главная">
+            <span class="brand-mark"><img src="assets/logo-light.webp" alt="" width="42" height="42"></span>
+            <span>Пирсинг Точка</span>
+          </a>
+          <div class="topbar-tools">
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Переключить на тёмную тему" aria-pressed="false">
+            <svg class="theme-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.2 15.1A8.3 8.3 0 0 1 8.9 3.8 8.7 8.7 0 1 0 20.2 15.1Z"/></svg>
+            <span class="theme-toggle__text">Тёмная тема</span>
+            </button>
+            <button class="menu-toggle" id="menuToggle" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="quickMenu">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+            </button>
+          </div>
+        </header>
+        <nav class="quick-menu" id="quickMenu" aria-label="Навигация по сайту" hidden>
+          <a href="index.html"><span>Главная</span></a>
+          <a href="studio-kuibysheva.html"><span>Студия на Куйбышева</span><small>Куйбышева, 93</small></a>
+          <a href="studio-ekaterininskaya.html"><span>Студия на Екатерининской</span><small>Екатерининская, 84</small></a>
+          <a href="alena.html"><span>Мастер Алёна</span><small>Екатерининская, 84</small></a>
+          <a href="julia.html" aria-current="page"><span>Мастер Юлия</span><small>Куйбышева, 93</small></a>
+          <a href="natalia.html"><span>Мастер Наталия</span><small>Куйбышева, 93</small></a>
+        </nav>
+
+        <section class="hero" aria-labelledby="masterName">
+          <div class="portrait-layer portrait-layer--julia">
+            <img src="assets/masters/julia.webp" alt="Юлия — мастер пирсинга" fetchpriority="high">
+          </div>
+          <div class="hero-copy">
+            <p class="eyebrow">Мастер пирсинга</p>
+            <h1 id="masterName">Юлия</h1>
+            <p class="specialties">Пирсинг <span>·</span> Украшения <span>·</span> Эстетика</p>
+            <div class="metal-rule" aria-hidden="true"></div>
+            <a class="address" href="studio-kuibysheva.html">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 12-7 12S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.3"/></svg>
+              <span>Куйбышева, 93<br><small>Пермь</small></span>
+            </a>
+          </div>
+        </section>
+
+        <section class="actions" aria-label="Полезные ссылки">
+          <a class="action-card action-card--primary" id="bookingLink" hidden>
+            <span class="action-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="16" rx="2.5"/><path d="M7.5 3v4M16.5 3v4M4 9.5h16M8 13h.01M12 13h.01M16 13h.01M8 17h.01M12 17h.01"/></svg>
+            </span>
+            <span class="action-copy"><strong>Онлайн-запись</strong><small>Выберите удобное время<br>и запишитесь к мастеру</small></span>
+            <span class="action-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="action-card" id="catalogLink" hidden>
+            <span class="action-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m12 2 9 5-9 15L3 7l9-5Z"/><path d="m3.5 7 8.5 2 8.5-2M12 9v13M7.5 4.5 12 9l4.5-4.5"/></svg>
+            </span>
+            <span class="action-copy"><strong>Каталог украшений</strong><small>Пирсинг, ювелирные изделия,<br>титан и золото</small></span>
+            <span class="action-arrow" aria-hidden="true">→</span>
+          </a>
+        </section>
+
+        <div class="booking-dialog" id="vpnDialog" role="dialog" aria-modal="true" aria-labelledby="vpnDialogTitle" aria-describedby="vpnDialogMessage" hidden>
+          <div class="booking-dialog__panel">
+            <button class="booking-dialog__close" id="closeVpnDialog" type="button" aria-label="Закрыть предупреждение и продолжить запись">×</button>
+            <span class="booking-dialog__icon" aria-hidden="true">!</span>
+            <h2 id="vpnDialogTitle">Проверьте VPN</h2>
+            <p id="vpnDialogMessage">При включённом VPN онлайн-запись может работать некорректно. Пожалуйста, отключите VPN перед продолжением.</p>
+            <button class="booking-dialog__continue" id="continueBooking" type="button">Продолжить к записи</button>
+          </div>
+        </div>
+
+        <section class="social-section" id="socialSection" aria-labelledby="socialHeading" hidden>
+          <h2 id="socialHeading">Социальные сети</h2>
+          <nav class="social-links" id="socialLinks" aria-label="Социальные сети"></nav>
+        </section>
+
+        <footer class="footer">
+          <div class="footer-rule" aria-hidden="true"><span>✦</span></div>
+          <img class="footer-logo" src="assets/logo-light.webp" alt="" width="42" height="42">
+          <p class="footer-brand">Пирсинг Точка</p>
+          <p class="footer-tagline">ТВОЯ ТОЧКА · ТВОЯ ИСТОРИЯ</p>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>
