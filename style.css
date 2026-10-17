@@ -69,11 +69,11 @@ button:focus-visible, a:focus-visible { outline: 2px solid var(--accent-gold); o
   position: absolute;
   z-index: -1;
   inset: 0;
-  background: url("assets/light-background.webp") center top / cover no-repeat;
+  background: url("light-background.webp") center top / cover no-repeat;
   content: "";
   pointer-events: none;
 }
-html[data-theme="dark"] .profile::before { background-image: url("assets/dark-background.webp"); }
+html[data-theme="dark"] .profile::before { background-image: url("dark-background.webp"); }
 .topbar {
   position: relative;
   z-index: 8;
@@ -491,7 +491,7 @@ html[data-theme="dark"] .action-arrow { border-color: rgba(218,185,122,.34); bac
 .footer-logo { width: 35px; height: 35px; margin-top: 12px; }
 .footer-brand { margin: 0; font-size: 22px; line-height: 1.1; }
 .footer-tagline { margin: 7px 0 0; color: var(--page-muted); font-size: 8px; letter-spacing: .23em; }
-html[data-theme="dark"] .brand-mark img, html[data-theme="dark"] .footer-logo { content: url("assets/logo-dark.webp"); }
+html[data-theme="dark"] .brand-mark img, html[data-theme="dark"] .footer-logo { content: url("logo-dark.webp"); }
 
 @media (min-width: 600px) {
   .page-wrap { width: min(calc(100% - 48px), 500px); padding-top: 24px; }
